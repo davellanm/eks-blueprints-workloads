@@ -6,7 +6,7 @@ namespace: k3s-home
 resources:
   - deployment.yaml
   - service.yaml
-  - ingress.yaml
+
 
 # configMapGenerator:
 #   - name: nginx-html
