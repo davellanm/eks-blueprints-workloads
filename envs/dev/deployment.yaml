@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k3s-home
+  namespace: k3s-home
+  labels:
+    app: k3s-home
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: k3s-home
+  template:
+    metadata:
+      labels:
+        app: k3s-home
+    spec:
+      containers:
+      - name: k3s-home
+        image: nginx
